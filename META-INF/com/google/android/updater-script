@@ -1,0 +1,12 @@
+ui_print("Welcome to Stockmod V0.1");
+ui_print("deleting actual system...");
+show_progress(0.2,1);
+mount("ext4", "EMMC", "/dev/block/mmcblk0p3", "/system");
+ui_print("mounted system");
+format("ext4", "EMMC", "/dev/block/mmcblk0p3");
+show_progress(0.5,1);
+ui_print("Installing new /system");
+show_progress(0.6,1);
+package_extract_dir("system", "/system");
+show_progress(1,1);
+ui_print("Done!");
