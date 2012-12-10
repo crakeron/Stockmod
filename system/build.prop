@@ -3,7 +3,7 @@
 ro.build.id=IMM76D
 ro.build.display.id=crakeron_stockmod-V0.1
 ro.build.version.incremental=eng.xiuyong.1350473572
-ro.custom.build.version=WIKO CINK SLIM Version 13
+ro.custom.build.version=crakeron_stockmod-V0.1
 ro.build.version.sdk=15
 ro.build.version.codename=REL
 ro.build.version.release=4.0.4
