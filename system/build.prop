@@ -157,6 +157,8 @@ ro.build.date.utc=1354530287
 #
 ro.max.fling_velocity=12000 
 ro.min.fling_velocity=8000
+windowsmgr.max_events_per_sec=150
+
 wifi.supplicant_scan_interval=180 
 
 ro.media.dec.jpeg.memcap=8000000
@@ -172,4 +174,11 @@ ro.ril.enable.3g.prefix=1
 ro.ril.htcmaskw1.bitmask=4294967295 
 ro.ril.htcmaskw1=14449 
 ro.ril.hsupa.category=5
+
+# net speed tweaks
+net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960
 
