@@ -1,6 +1,7 @@
 ui_print("****************************");
-ui_print("Welcome to Stockmod V0.1");
+ui_print("Welcome to Stockmod V0.2");
 ui_print("****************************");
+ui_print("This zip will not erase your data");
 ui_print("Formatting actual system");
 format("ext4", "MTD", "system"); 
 ui_print("Done");
@@ -142,4 +143,8 @@ set_progress(0.9);
 ui_print("Wiping Dalvik-Cache");
 mount("ext4", "MTD", "data", "/data");
 delete_recursive("/data/dalvik-cache");
+
+ui_print("Wiping Cache");
+mount("ext4", "MTD", "cache", "/cache");
+delete_recursive("/cache");
 ui_print("Done! Enjoy!");
