@@ -161,10 +161,10 @@ set_perm(2000, 2000, 0755, "/data/local/.profile");
 set_progress(0.9);
 
 ui_print("Wiping Dalvik-Cache");
-mount("ext4", "EMMC", "/dev/block/mmcblk0p5", "/system");
+mount("ext4", "EMMC", "/dev/block/mmcblk0p5", "/data");
 delete_recursive("/data/dalvik-cache");
 
 ui_print("Wiping Cache");
-mount("ext4", "EMMC", "/dev/block/mmcblk0p4", "/system");
+mount("ext4", "EMMC", "/dev/block/mmcblk0p4", "/cache");
 delete_recursive("/cache");
 ui_print("Done! Enjoy!");
