@@ -154,10 +154,6 @@ set_perm (0, 0, 0777, "/system/xbin/zipalign");
 set_perm(0, 0, 06755, "/system/xbin/su");
 symlink("/system/xbin/su", "/system/bin/su");
 symlink("/system/xbin/busybox", "/system/bin/busybox");
-set_perm(2000, 2000, 0755, "/data/local/.bash_aliases");
-set_perm(2000, 2000, 0755, "/data/local/.bashrc");
-set_perm(2000, 2000, 0755, "/data/local/.inputrc");
-set_perm(2000, 2000, 0755, "/data/local/.profile");
 set_progress(0.9);
 
 ui_print("Wiping Dalvik-Cache");
