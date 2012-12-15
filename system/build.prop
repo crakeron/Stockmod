@@ -3,7 +3,7 @@
 ro.build.id=IMM76D
 ro.build.display.id=ALPS.ICS2.MP.V1
 ro.build.version.incremental=eng.xiuyong.1350473572
-ro.custom.build.version=WIKO CINK SLIM Stockmod V0.2.5
+ro.custom.build.version=WIKO CINK SLIM Stockmod V0.3
 ro.build.version.sdk=15
 ro.build.version.codename=REL
 ro.build.version.release=4.0.4
