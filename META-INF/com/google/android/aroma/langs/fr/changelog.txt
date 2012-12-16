@@ -1,0 +1,16 @@
+<b><#selectbg_g>v0.3</#></b>
+<*>Installateur (par -MaTiK-)</*>
+<*>Réparation du wipe du cache et du dalvik-cache</*>
+
+<b><#selectbg_g>v0.2.5</#></b>
+<*>Problemes d'installation réglés!</*>
+
+<b><#selectbg_g>v0.2</#></b>
+<*>Tweaks GPS, Données, Réseau</*>
+<*>Tweaks performance et battery</*>
+<*>Amélioration de la qualité de l'encodage photo et vidéo</*>
+
+<b><#selectbg_g>v0.1</#></b>
+<*>Pré-root</*>
+<*>MMS.apk modifiée pour sauter des lignes</*>
+<*>Applications Go supprimées</*>
