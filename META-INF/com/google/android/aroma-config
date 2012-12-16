@@ -6,7 +6,7 @@
 ##
 # FIX MENU KEY CODE
 #
-ini_set("customkeycode_menu",   "172");
+ini_set("customkeycode_menu",  "172");
 
 ##
 # INITIALIZING ROM INFORMATIONS
