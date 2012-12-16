@@ -1,0 +1,16 @@
+<b><#selectbg_g>v0.3</#></b>
+<*>Installer (by -MaTiK-)</*>
+<*>Fix cache wipe and dalvik-cache wipe</*>
+
+<b><#selectbg_g>v0.2.5</#></b>
+<*>Fix install problems</*>
+
+<b><#selectbg_g>v0.2</#></b>
+<*>GPS, Data, Netework tweaks</*>
+<*>Performance and battery tweaks</*>
+<*>Amélioration de la qualité de l'encodage photo et vidéo</*>
+
+<b><#selectbg_g>v0.1</#></b>
+<*>Rooted</*>
+<*>Modded MMS.apk for linebreaks</*>
+<*>Delete Go applications</*>

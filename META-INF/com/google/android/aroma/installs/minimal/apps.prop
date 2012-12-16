@@ -1,0 +1,50 @@
+#-- Email
+item.1.1=0
+
+#-- FM Radio
+item.1.2=0
+
+#-- Gmail
+item.1.3=0
+
+#-- Google Maps
+item.1.4=0
+
+#-- Google Talk
+item.1.5=0
+
+#-- YouTube
+item.1.6=0
+
+
+
+#-- Facebook
+item.2.1=0
+
+#-- Facebook Messenger
+item.2.2=0
+
+#-- Twitter
+item.2.3=0
+
+
+
+#-- Aptoide
+item.3.1=0
+
+#-- Aptoide Repos
+item.3.2=0
+
+
+
+#-- MTK Weather
+item.4.1=0
+
+
+
+#-- Genie Widget
+item.5.1=0
+#-- MTK Weather Widget
+item.5.2=0
+#-- MTK WorldClock Widget
+item.5.3=0

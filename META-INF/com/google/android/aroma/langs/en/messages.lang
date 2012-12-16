@@ -1,0 +1,41 @@
+text_ok=OK
+text_next=Next >
+text_back=< Back
+text_yes=Yes
+text_no=No
+text_about=About installer
+text_quit=Quit Installation
+text_quit_msg=Are you sure to quit the installer?
+
+langtest.title=Language Test
+langtest.multiline=This text is located in langs/en.lang\
+Use backslash before enter to add new line\
+\
+You can also do <b>Formatting</b> inside the language string resource.\
+\
+Thanks for using AROMA Installer
+
+welcome.title=Welcome
+welcome.text=You are about to Installing <b>Stockmod v0.3</b> for <b>WIKO CINK Slim</b>.\
+\
+<b>Stockmod</b> is a ROM based on Stok version with root and other tweaks. 
+welcome.next=Press Next to continue the Installation...
+
+changelog.title=Changelog
+changelog.desc=<b>Stockmod</b> Changelog
+
+installer.title=Stockmod Installer
+installer.subtitle=Please select menu below
+installer.menu.install=Install
+installer.menu.install.sub=Install Stockmod
+installer.menu.infos=System Information
+installer.menu.infos.sub=Get and show device/partition informations
+installer.menu.reboot=Reboot
+installer.menu.reboot.sub=Reboot Your Device
+installer.menu.reboot.confirm=Are you sure want to reboot your device?
+installer.menu.exit=Exit
+installer.menu.exit.sub=Terminate Stockmod Installer
+installer.menu.exit.confirm=Are you sure want to exit the Installer?
+installer.install=Install Now
+installer.installing=Installing
+installer.finish=Finish

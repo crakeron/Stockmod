@@ -1,0 +1,11 @@
+#-- Default Launcher = Default
+selected.1=1
+
+#-- Default Root application = SuperSU
+selected.2=1
+
+#-- Default Exploreur = ES Explorer
+selected.3=3
+
+#-- Default Browser = Google Chrome
+selected.4=2
