@@ -1,24 +1,282 @@
-ui_print("****************************");
-ui_print("Welcome to Stockmod V0.2.5");
-ui_print("****************************");
+ui_print("@Welcome to Stockmod V0.3");
+ui_print(" ");
 ui_print("This zip will not erase your data");
+ui_print(" ");
+set_progress(0.01);
 
-ui_print("Formatting actual system");
+ui_print("@Mounting & Formating");
+set_progress(0.02);
+
+ui_print("Format /system");
 format("ext4", "EMMC", "/dev/block/mmcblk0p3", "0");
-ui_print("Mounting system");
+set_progress(0.03);
+
+ui_print("Mount /system");
 mount("ext4", "EMMC", "/dev/block/mmcblk0p3", "/system");
+set_progress(0.04);
 ui_print("Done");
 
 
+ui_print(" ");
+ui_print("@Installing");
+ui_print(" ");
 ui_print("Copying new system");
 set_progress(0.05);
+
+show_progress(0.8, 1020);
 package_extract_dir("system", "/system");
-set_progress(0.10);
-  set_perm_recursive(0, 0, 0755, 0644, "/system/app");
-  set_perm_recursive(0, 0, 0755, 0644, "/system/tts");
-  set_perm_recursive(0, 0, 0755, 0644, "/system/lib");
+
+# Default launcher
+if
+  file_getprop("/tmp/aroma/defaults.prop","selected.1") == "1"
+then
+  package_extract_file("apps/launchers/Launcher2.apk", "/system/app/Launcher2.apk");
+  ui_print("Installing Default launcher");
+endif;
+
+# ADW.Launcher
+if
+  file_getprop("/tmp/aroma/defaults.prop","selected.1") == "2"
+then
+  package_extract_file("apps/launchers/ADWLauncher.apk", "/system/app/ADWLauncher.apk");
+  ui_print("Installing ADW.Launcher");
+endif;
+
+# Apex Launcher
+if
+  file_getprop("/tmp/aroma/defaults.prop","selected.1") == "3"
+then
+  package_extract_file("apps/launchers/ApexLauncher.apk", "/system/app/ApexLauncher.apk");
+  ui_print("Installing Apex Launcher");
+endif;
+
+# Go Launcher EX
+if
+  file_getprop("/tmp/aroma/defaults.prop","selected.1") == "4"
+then
+  package_extract_file("apps/launchers/GOLauncherEX.apk", "/system/app/GOLauncherEX.apk");
+  ui_print("Installing Go Launcher EX");
+endif;
+
+# Nova Launcher
+if
+  file_getprop("/tmp/aroma/defaults.prop","selected.1") == "5"
+then
+  package_extract_file("apps/launchers/NovaLauncher.apk", "/system/app/NovaLauncher.apk");
+  ui_print("Installing Nova Launcher");
+endif;
+
+set_progress(0.86);
+
+
+
+# Default explorer
+if
+  file_getprop("/tmp/aroma/defaults.prop","selected.3") == "1"
+then
+  package_extract_file("apps/explorers/FileManager.apk", "/system/app/FileManager.apk");
+  ui_print("Installing Default explorer");
+endif;
+
+# ASTRO Explorer
+if
+  file_getprop("/tmp/aroma/defaults.prop","selected.3") == "2"
+then
+  package_extract_file("apps/explorers/AstroExplorer.apk", "/system/app/AstroExplorer.apk");
+  ui_print("Installing Astro Explorer");
+endif;
+
+# ES Explorer
+if
+  file_getprop("/tmp/aroma/defaults.prop","selected.3") == "3"
+then
+  package_extract_file("apps/explorers/ESExplorer.apk", "/system/app/ESExplorer.apk");
+  ui_print("Installing ES Explorer");
+endif;
+
+# Explorer
+if
+  file_getprop("/tmp/aroma/defaults.prop","selected.3") == "4"
+then
+  package_extract_file("apps/explorers/Explorer.apk", "/system/app/Explorer.apk");
+  ui_print("Installing Explorer");
+endif;
+
+set_progress(0.87);
+
+
+
+# Default browser
+if
+  file_getprop("/tmp/aroma/defaults.prop","selected.4") == "1"
+then
+  package_extract_file("apps/browsers/Browser.apk", "/system/app/Browser.apk");
+  ui_print("Installing Default browser");
+endif;
+
+# Google Chrome
+if
+  file_getprop("/tmp/aroma/defaults.prop","selected.4") == "2"
+then
+  package_extract_file("apps/browsers/GoogleChrome.apk", "/system/app/GoogleChrome.apk");
+  ui_print("Installing Google Chrome");
+endif;
+
+# Dolphin Browser
+if
+  file_getprop("/tmp/aroma/defaults.prop","selected.4") == "3"
+then
+  package_extract_file("apps/browsers/DolphinBrowser.apk", "/system/app/DolphinBrowser.apk");
+  ui_print("Installing Dolphin Browser");
+endif;
+
+set_progress(0.88);
+
+
+
+# Email
+if
+  file_getprop("/tmp/aroma/apps.prop","item.1.1") == "1"
+then
+  package_extract_file("apps/google/Exchange.apk", "/system/app/Exchange.apk");
+  package_extract_file("apps/google/Email.apk", "/system/app/Email.apk");
+  ui_print("Installing Email");
+endif;
+
+# FM Radio
+if
+  file_getprop("/tmp/aroma/apps.prop","item.1.2") == "1"
+then
+  package_extract_file("apps/google/FmRadio.apk", "/system/app/FmRadio.apk");
+  ui_print("Installing FM Radio");
+endif;
+
+# Gmail
+if
+  file_getprop("/tmp/aroma/apps.prop","item.1.3") == "1"
+then
+  package_extract_file("apps/google/Gmail.apk", "/system/app/Gmail.apk");
+  ui_print("Installing Gmail");
+endif;
+
+# Google Maps
+if
+  file_getprop("/tmp/aroma/apps.prop","item.1.4") == "1"
+then
+  package_extract_file("apps/google/GoogleMap.apk", "/system/app/GoogleMap.apk");
+  ui_print("Installing Google Maps");
+endif;
+
+# Google Talk
+if
+  file_getprop("/tmp/aroma/apps.prop","item.1.5") == "1"
+then
+  package_extract_file("apps/google/Talk.apk", "/system/app/Talk.apk");
+  ui_print("Installing Google Talk");
+endif;
+
+# Youtube
+if
+  file_getprop("/tmp/aroma/apps.prop","item.1.6") == "1"
+then
+  package_extract_file("apps/google/Youtube.apk", "/system/app/Youtube.apk");
+  ui_print("Installing Youtube");
+endif;
+
+set_progress(0.90);
+
+
+
+# Facebook
+if
+  file_getprop("/tmp/aroma/apps.prop","item.2.1") == "1"
+then
+  package_extract_file("apps/social/Facebook.apk", "/system/app/Facebook.apk");
+  ui_print("Installing Facebook");
+endif;
+
+# Facebook Messenger
+if
+  file_getprop("/tmp/aroma/apps.prop","item.2.2") == "1"
+then
+  package_extract_file("apps/social/FacebookMessenger.apk", "/system/app/FacebookMessenger.apk");
+  ui_print("Installing Facebook Messenger");
+endif;
+
+# Twitter
+if
+  file_getprop("/tmp/aroma/apps.prop","item.2.3") == "1"
+then
+  package_extract_file("apps/social/Twitter.apk", "/system/app/Twitter.apk");
+  ui_print("Installing Twitter");
+endif;
+
+set_progress(0.91);
+
+
+
+# Aptoide
+if
+  file_getprop("/tmp/aroma/apps.prop","item.3.1") == "1"
+then
+  package_extract_file("apps/stores/Aptoide.apk", "/system/app/Aptoide.apk");
+  ui_print("Installing Aptoide");
+endif;
+
+# Aptoide Repos
+if
+  file_getprop("/tmp/aroma/apps.prop","item.3.2") == "1"
+then
+  package_extract_file("apps/stores/AptoideRepos.apk", "/system/app/AptoideRepos.apk");
+  ui_print("Installing Aptoide Repos");
+endif;
+
+set_progress(0.92);
+
+
+
+# MTK Weather
+if
+  file_getprop("/tmp/aroma/apps.prop","item.4.1") == "1"
+then
+  package_extract_file("apps/others/MtkWeatherProvider.apk", "/system/app/MtkWeatherProvider.apk");
+  package_extract_file("apps/others/MtkWeatherSetting.apk", "/system/app/MtkWeatherSetting.apk");    
+  ui_print("Installing MTK Weather");
+endif;
+
+
+
+# Genie Widget
+if
+  file_getprop("/tmp/aroma/apps.prop","item.5.1") == "1"
+then
+  package_extract_file("apps/widgets/GenieWidget.apk", "/system/app/GenieWidget.apk");
+  ui_print("Installing Genie Widget");
+endif;
+
+# MTK Weather Widget
+if
+  file_getprop("/tmp/aroma/apps.prop","item.5.2") == "1"
+then
+  package_extract_file("apps/widgets/MtkWeatherWidget.apk", "/system/app/MtkWeatherWidget.apk");
+  ui_print("Installing MTK Weather Widget");
+endif;
+
+# MTK WorldClock Widget
+if
+  file_getprop("/tmp/aroma/apps.prop","item.5.3") == "1"
+then
+  package_extract_file("apps/widgets/MtkWorldClockWidget.apk", "/system/app/MtkWorldClockWidget.apk");
+  ui_print("Installing MTK WorldClock Widget");
+endif;
+
+set_progress(0.93);
+
+set_perm_recursive(0, 0, 0755, 0644, "/system/app");
+set_perm_recursive(0, 0, 0755, 0644, "/system/tts");
+set_perm_recursive(0, 0, 0755, 0644, "/system/lib");
 set_perm_recursive(0, 0, 0755, 0644, "/system/usr/srec/");
-set_progress(0.25);
+set_progress(0.94);
 
 ui_print("Creating symlinks");
 symlink("busybox", "/system/xbin/[", "/system/xbin/[[",
@@ -92,8 +350,9 @@ symlink("busybox", "/system/xbin/[", "/system/xbin/[[",
                 "/system/xbin/which", "/system/xbin/whoami", "/system/xbin/xargs",
                 "/system/xbin/xz", "/system/xbin/xzcat", "/system/xbin/yes",
                 "/system/xbin/zcat");
+
 symlink("mksh", "/system/bin/sh");
-set_progress(0.5);
+
 symlink("toolbox", "/system/bin/cat", "/system/bin/chmod",
                 "/system/bin/chown", "/system/bin/cmp", "/system/bin/date",
                 "/system/bin/dd", "/system/bin/df", "/system/bin/dmesg",
@@ -114,8 +373,9 @@ symlink("toolbox", "/system/bin/cat", "/system/bin/chmod",
                 "/system/bin/top", "/system/bin/touch", "/system/bin/umount",
                 "/system/bin/uptime", "/system/bin/vmstat", "/system/bin/watchprops",
                 "/system/bin/wipe");
-				
-ui_print("..Setting permissions..");
+set_progress(0.95);
+                
+ui_print("Setting permissions");
 set_perm_recursive(0, 0, 0755, 0644, "/system");
 set_perm_recursive(0, 2000, 0755, 0755, "/system/bin");
 set_perm_recursive(0, 0, 0755, 0755, "/system/etc/init.d");
@@ -154,13 +414,28 @@ set_perm (0, 0, 0777, "/system/xbin/zipalign");
 set_perm(0, 0, 06755, "/system/xbin/su");
 symlink("/system/xbin/su", "/system/bin/su");
 symlink("/system/xbin/busybox", "/system/bin/busybox");
-set_progress(0.9);
+set_progress(0.97);
+ui_print("Done");
 
+ui_print(" ");
+ui_print("@Cleaning");
+ui_print(" ");
 ui_print("Wiping Dalvik-Cache");
 mount("ext4", "EMMC", "/dev/block/mmcblk0p5", "/data");
 delete_recursive("/data/dalvik-cache");
+set_progress(0.98);
 
 ui_print("Wiping Cache");
 mount("ext4", "EMMC", "/dev/block/mmcblk0p4", "/cache");
 delete_recursive("/cache");
-ui_print("Done! Enjoy!");
+set_progress(0.99);
+
+ui_print("Unmounting");
+unmount("/system");
+unmount("/data");
+unmount("/cache");
+ui_print("Done");
+set_progress(1.0);
+
+ui_print(" ");
+ui_print("Enjoy!");
