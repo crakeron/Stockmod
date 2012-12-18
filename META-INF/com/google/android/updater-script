@@ -119,6 +119,7 @@ if
   file_getprop("/tmp/aroma/defaults.prop","selected.4") == "2"
 then
   package_extract_file("apps/browsers/GoogleChrome.apk", "/system/app/GoogleChrome.apk");
+  package_extract_file("apps/browsers/libchromeview.so", "/system/lib/libchromeview.so");
   ui_print("Installing Google Chrome");
 endif;
 
