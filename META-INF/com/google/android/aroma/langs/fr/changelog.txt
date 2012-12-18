@@ -1,3 +1,7 @@
+﻿<b><#selectbg_g>v0.4</#></b>
+<*>Ajout du pack d'icons Android AOSP</*>
+<*>Fix Chrome</*>
+
 <b><#selectbg_g>v0.3</#></b>
 <*>Installateur (par -MaTiK-)</*>
 <*>Réparation du wipe du cache et du dalvik-cache</*>

@@ -1,3 +1,7 @@
+﻿<b><#selectbg_g>v0.4</#></b>
+<*>Added AOSP icon pack</*>
+<*>Fixed Chrome app</*>
+
 <b><#selectbg_g>v0.3</#></b>
 <*>Installer (by -MaTiK-)</*>
 <*>Fix cache wipe and dalvik-cache wipe</*>
