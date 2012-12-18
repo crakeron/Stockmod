@@ -12,10 +12,10 @@ ini_set("customkeycode_menu",  "172");
 # INITIALIZING ROM INFORMATIONS
 #
 ini_set("rom_name",             "StockMod");
-ini_set("rom_version",          "0.3");
+ini_set("rom_version",          "0.4");
 ini_set("rom_author",           "crakeron");
 ini_set("rom_device",           "WIKO CINK SLIM");
-ini_set("rom_date",             "16 Decembre 2012");
+ini_set("rom_date",             "18 Decembre 2012");
 
 ##
 # SET MIUI THEME
@@ -289,8 +289,8 @@ else
       
       "Icones",                 "",                        2,  #-- Group 1. key = "selected.1"
 #        "Default",             "",                        0,      #-- selected.1 = 1
-        "Wiko",                 "",                        1       #-- selected.1 = 2
-        "AOSP",                 "",                        0       #-- selected.1 = 3
+        "Wiko",                 "",                        1,       #-- selected.1 = 2
+        "AOSP",                 "",                        0        #-- selected.1 = 3
   );
 endif;
 
