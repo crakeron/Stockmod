@@ -271,6 +271,14 @@ then
   ui_print("Installing MTK WorldClock Widget");
 endif;
 
+# AOSP icon pack
+if
+  file_getprop("/tmp/aroma/icons.prop","selected.1")== "3"
+then
+  package_extract_dir("packs/AOSP/", "/system/app");
+  ui_print("Installed AOSP icons pack");
+endif;
+
 set_progress(0.93);
 
 set_perm_recursive(0, 0, 0755, 0644, "/system/app");
