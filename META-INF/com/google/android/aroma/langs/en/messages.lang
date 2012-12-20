@@ -16,7 +16,7 @@ You can also do <b>Formatting</b> inside the language string resource.\
 Thanks for using AROMA Installer
 
 welcome.title=Welcome
-welcome.text=You are about to Installing <b>Stockmod v0.3</b> for <b>WIKO CINK Slim</b>.\
+welcome.text=You are about to Install <b>Stockmod v0.4</b> for <b>WIKO CINK Slim</b>.\
 \
 <b>Stockmod</b> is a ROM based on Stok version with root and other tweaks. 
 welcome.next=Press Next to continue the Installation...
