@@ -278,6 +278,24 @@ then
   package_extract_dir("packs/AOSP/", "/system/app/");
   ui_print("Installed AOSP icons pack");
 endif;
+# delete default browser if not chosen
+if
+  file_getprop("/tmp/aroma/defaults.prop","selected.4") != "1"
+then
+  delete("/system/app/Browser.apk");
+endif;
+# delete default file manager if not chosen
+if
+  file_getprop("/tmp/aroma/defaults.prop","selected.3") != "1"
+then
+  delete("/system/app/FileManager.apk");
+endif;
+# delete default launcher if not chosen
+if
+  file_getprop("/tmp/aroma/defaults.prop","selected.1") != "1"
+then
+  delete("/system/app/Launcher2.apk");
+endif;
 
 set_progress(0.93);
 
