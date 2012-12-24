@@ -12,7 +12,7 @@ ini_set("customkeycode_menu",  "172");
 # INITIALIZING ROM INFORMATIONS
 #
 ini_set("rom_name",             "StockMod");
-ini_set("rom_version",          "0.4");
+ini_set("rom_version",          "0.5");
 ini_set("rom_author",           "crakeron");
 ini_set("rom_device",           "WIKO CINK SLIM");
 ini_set("rom_date",             "18 Decembre 2012");
