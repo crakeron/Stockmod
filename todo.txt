@@ -1,9 +1,8 @@
 add quickpic
-mod aosp mms.apk
 change all V0.xx in installer scripts
 investigate aroma:
 	- default back to custom install not working?
-	- unticking ticked options still install
+	
 
 
 code Stockmod options app
