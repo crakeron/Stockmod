@@ -271,6 +271,7 @@ then
   ui_print("Installing MTK WorldClock Widget");
 endif;
 
+
 # AOSP icon pack
 if
   file_getprop("/tmp/aroma/icons.prop","selected.1") == "2"
@@ -296,6 +297,18 @@ if
 then
   delete("/system/app/Launcher2.apk");
 endif;
+
+
+# GPS
+if
+  file_getprop("/tmp/aroma/gps.prop","selected.1") == "3"
+then
+  package_extract_dir("/gps/", "/system/etc/");
+  package_extract_file("/gps/gpsconfig.xml", "/system/etc/permissions/gpsconfig.xml");
+  ui_print("Installed GPS files");
+endif;
+
+
 
 set_progress(0.93);
 

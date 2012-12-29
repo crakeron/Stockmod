@@ -270,7 +270,7 @@ endif;
 
 ###################################################################################################################
 #
-# STEP 5 - SELECT DEFAULT ICONS
+# STEP 5.1 - SELECT DEFAULT ICONS
 #
 if (prop("type.prop","selected")!="4") then
   writetmpfile(
