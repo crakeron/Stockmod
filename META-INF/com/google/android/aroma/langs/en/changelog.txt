@@ -4,6 +4,7 @@
 <*>Created Stockmod Settings App</*>
 <*>Modded AOSP MMS.apk</*>
 <*>GPS finaly fixed!</*>
+<*>Possibility to ignore GPS files</*>
 
 <b><#selectbg_g>v0.4</#></b>
 <*>Added AOSP icon pack</*>

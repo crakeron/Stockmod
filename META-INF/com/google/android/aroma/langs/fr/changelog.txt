@@ -3,6 +3,7 @@
 <*>Possibilité de faire des retours à la ligne pour le MMS.apk du pack AOSP</*>
 <*>Création d'une appli Reglages Stockmod</*>
 <*>GPS fonctionnel!</*>
+<*>Possibilité de ne pas toucher au GPS</*>
 
 <b><#selectbg_g>v0.4</#></b>
 <*>Ajout du pack d'icons Android AOSP</*>
