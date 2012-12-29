@@ -1,4 +1,11 @@
-﻿<b><#selectbg_g>v0.4</#></b>
+﻿<b><#selectbg_g>v0.5</#></b>
+<*>Fixed AOSP icon pack</*>
+<*>Modded AOSP MMS.apk</*>
+<*>Created Stockmod Settings App</*>
+<*>Modded AOSP MMS.apk</*>
+<*>GPS finaly fixed!</*>
+
+<b><#selectbg_g>v0.4</#></b>
 <*>Added AOSP icon pack</*>
 <*>Fixed Chrome app</*>
 
