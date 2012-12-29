@@ -1,4 +1,4 @@
-ui_print("@Welcome to Stockmod V0.3");
+ui_print("@Welcome to Stockmod by crakeron");
 ui_print(" ");
 ui_print("This zip will not erase your data");
 ui_print(" ");

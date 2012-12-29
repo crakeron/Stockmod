@@ -100,7 +100,7 @@
     arp-supl-use-apn="true"
     acSuplServer="www.spirent-lcs.com"
     SuplPort="7275"
-    tlsCertPath="/system/etc/security/"
+    tlsCertPath="/system/etc/security/cacerts/"
     TISEnabled="false" 
     RILEnabled="true" 
 />
