@@ -294,6 +294,31 @@ else
   );
 endif;
 
+###################################################################################################################
+#
+# STEP 5.2 - GPS configuration
+#
+if (prop("type.prop","selected")!="4") then
+  writetmpfile(
+      "gps.prop",
+    
+    #-- Default Values
+       resread("installs/"+getvar("install_type")+"/gps.prop")
+  );
+else
+  #-- IF Not "Default" Show Main Features Selection
+  selectbox(
+      "Choose GPS files",
+      "Please select gps files that you want to use :",
+      "@default",
+      "gps.prop",
+      
+      "GPS",                 "",                        2,  #-- Group 1. key = "selected.1"
+#        "Default",             "",                        0,      #-- selected.1 = 1
+        "My GPS works, don't touch it",                 "",                        1,       #-- selected.1 = 2
+        "Try and fix my GPS",                 "",                        0        #-- selected.1 = 3
+  );
+endif;
 
 ###################################################################################################################
 #
