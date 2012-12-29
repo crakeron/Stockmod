@@ -1,5 +1,4 @@
 add quickpic
-change all V0.xx in installer scripts
 investigate aroma:
 	- default back to custom install not working?
 	
