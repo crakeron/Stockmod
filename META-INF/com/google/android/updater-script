@@ -5,6 +5,7 @@ ui_print(" ");
 set_progress(0.01);
 
 ui_print("@Mounting & Formating");
+mount("ext4", "EMMC", "/dev/block/mmcblk0p5", "/data");
 set_progress(0.02);
 
 ui_print("Format /system");
@@ -305,6 +306,8 @@ if
 then
   package_extract_dir("/gps/", "/system/etc/");
   package_extract_file("/gps/gpsconfig.xml", "/system/etc/permissions/gpsconfig.xml");
+  delete("/data/gps/gldata.sto");
+  
   ui_print("Installed GPS files");
 endif;
 
@@ -461,7 +464,6 @@ ui_print(" ");
 ui_print("@Cleaning");
 ui_print(" ");
 ui_print("Wiping Dalvik-Cache");
-mount("ext4", "EMMC", "/dev/block/mmcblk0p5", "/data");
 delete_recursive("/data/dalvik-cache");
 set_progress(0.98);
 
